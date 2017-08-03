@@ -4,12 +4,7 @@ set cursorline
 set shiftwidth=4
 set softtabstop=4
 
-" move line up/down
-nnoremap <M-S-Up> :m-2<CR>
-nnoremap <M-S-Down> :m+<CR>
-
-"nnoremap <S-Up> :m-2<CR>
-"nnoremap <S-Down> :m+<CR>
+let mapleader=","
 
 syntax enable
 
