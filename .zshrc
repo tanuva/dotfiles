@@ -51,3 +51,4 @@ alias ll="ls -lh"
 # Customize to your needs...
 export PATH=/usr/local/sbin:$PATH
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+export LESS="-N"
