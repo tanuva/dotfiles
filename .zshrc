@@ -56,3 +56,4 @@ alias gsp="git stash pop"
 export PATH=/usr/local/sbin:$PATH
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 #export LESS="-N"
+export SQUISH_USE_SWT=1
