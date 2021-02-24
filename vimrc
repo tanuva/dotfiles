@@ -1,3 +1,6 @@
+" === Vundle Installation ===
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 "" Vundle setup. Keep at top!
 set nocompatible              " be iMproved, required
 filetype off                  " required
