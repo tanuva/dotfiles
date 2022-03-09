@@ -47,10 +47,6 @@ plugins=(git macos python rust)
 source $ZSH/oh-my-zsh.sh
 
 alias ll="ls -lh"
-alias gpu="git pull"
-unalias gss
-alias gss="git stash"
-alias gsp="git stash pop"
 
 # Customize to your needs...
 export PATH=/usr/local/sbin:$PATH
