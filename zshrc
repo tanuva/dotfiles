@@ -48,8 +48,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias ll="ls -lh"
 
-# Customize to your needs...
-export PATH=/usr/local/sbin:$PATH
+# Put arm64 homebrew before x64 homebrew
+export PATH=/opt/homebrew/bin:$PATH
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 #export LESS="-N"
 #export SQUISH_USE_SWT=1
