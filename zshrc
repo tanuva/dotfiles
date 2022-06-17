@@ -49,6 +49,7 @@ source $ZSH/oh-my-zsh.sh
 alias ll="ls -lh"
 # Fix colors in tig after ~/.terminfo for fixing tmux broke them
 alias tig="TERM=xterm-256color tig"
+alias gpdev="git push gerrit HEAD:refs/for/dev"
 
 # Put arm64 homebrew before x64 homebrew
 export PATH=/opt/homebrew/bin:$PATH
