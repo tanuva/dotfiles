@@ -47,6 +47,8 @@ plugins=(git macos python rust)
 source $ZSH/oh-my-zsh.sh
 
 alias ll="ls -lh"
+# Fix colors in tig after ~/.terminfo for fixing tmux broke them
+alias tig="TERM=xterm-256color tig"
 
 # Put arm64 homebrew before x64 homebrew
 export PATH=/opt/homebrew/bin:$PATH
