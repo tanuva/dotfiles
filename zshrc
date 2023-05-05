@@ -58,7 +58,10 @@ export PATH=/opt/homebrew/bin:$PATH
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 #export LESS="-N"
 #export SQUISH_USE_SWT=1
-export GIT_PAGER="/opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less"
 
 # Signing with gpg fails with something about ioctls without this
 export GPG_TTY=$(tty)
+
+if [ -e /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight ]; then
+    export GIT_PAGER="/opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less"
+fi
