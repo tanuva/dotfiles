@@ -65,3 +65,8 @@ export GPG_TTY=$(tty)
 if [ -e /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight ]; then
     export GIT_PAGER="/opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less"
 fi
+
+if [ -e /opt/homebrew/bin/hx ] || [ -e /usr/bin/hx ]; then
+    export VISUAL=hx
+    export EDITOR=$VISUAL
+fi
