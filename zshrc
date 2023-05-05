@@ -50,13 +50,23 @@ alias ll="ls -lh"
 # Fix colors in tig after ~/.terminfo for fixing tmux broke them
 alias tig="TERM=xterm-256color tig"
 alias gpdev="git push gerrit HEAD:refs/for/dev"
+alias gcp="git cherry-pick -x"
+alias vscode="open -a /Applications/Visual\ Studio\ Code.app"
 
 # Put arm64 homebrew before x64 homebrew
 export PATH=/opt/homebrew/bin:$PATH
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 #export LESS="-N"
 #export SQUISH_USE_SWT=1
-export GIT_PAGER="/opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less"
 
 # Signing with gpg fails with something about ioctls without this
 export GPG_TTY=$(tty)
+
+if [ -e /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight ]; then
+    export GIT_PAGER="/opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less"
+fi
+
+if [ -e /opt/homebrew/bin/hx ] || [ -e /usr/bin/hx ]; then
+    export VISUAL=hx
+    export EDITOR=$VISUAL
+fi
