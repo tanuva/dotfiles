@@ -6,7 +6,7 @@ ZSH_CUSTOM=$HOME/.dotfiles/zsh_custom
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="tanuva_frosch"
+ZSH_THEME="tanuva"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
