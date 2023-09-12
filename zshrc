@@ -50,7 +50,7 @@ alias ll="ls -lh"
 # Fix colors in tig after ~/.terminfo for fixing tmux broke them
 alias tig="TERM=xterm-256color tig"
 alias gpdev="git push gerrit HEAD:refs/for/dev"
-alias gcp="git cherry-pick -x"
+alias gcp="git cherry-pick"
 alias vscode="open -a /Applications/Visual\ Studio\ Code.app"
 
 # Put arm64 homebrew before x64 homebrew
