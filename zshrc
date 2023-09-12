@@ -32,7 +32,7 @@ alias gopath='export GOPATH=$GOPATH:`pwd`'
 # DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
@@ -50,7 +50,7 @@ alias ll="ls -lh"
 # Fix colors in tig after ~/.terminfo for fixing tmux broke them
 alias tig="TERM=xterm-256color tig"
 alias gpdev="git push gerrit HEAD:refs/for/dev"
-alias gcp="git cherry-pick -x"
+alias gcp="git cherry-pick"
 alias vscode="open -a /Applications/Visual\ Studio\ Code.app"
 
 # Put arm64 homebrew before x64 homebrew
