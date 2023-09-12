@@ -1,0 +1,12 @@
+[editor]
+bufferline = "multiple"
+color-modes = true
+cursorline = true
+rulers = [80, 120]
+soft-wrap.enable = true
+text-width = 80
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding", "total-line-numbers", "file-type"]
