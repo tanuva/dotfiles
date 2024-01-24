@@ -6,11 +6,11 @@ READABLE_COLOURS=(12 18 23 24 29 30 35 36 37 38 43 54 59 67 71 72 73 74 79 90 97
 COLOUR_AMOUNT=${#READABLE_COLOURS[@]}
 
 # we hash username@hostname, then mod it by the colour count
-if command -v sha1sum &> /dev/null; then
+if [[ $(uname -s) == Linux ]]; then
     # Guess we're on Linux
     HOST_STRING=$(whoami)@$(hostnamectl hostname)
     HOST_STRING_HASH=$(( 0x$(echo $HOST_STRING | sha1sum | cut -d ' ' -f 1 | head -c 10) ))
-elif command -v shasum &> /dev/null; then
+elif [[ $(uname -s) == Darwin ]]; then
     # macOS, probably
     HOST_STRING=$(whoami)@$(hostname)
     HOST_STRING_HASH=$(( 0x$(echo $HOST_STRING | shasum - | cut -d ' ' -f 1 | head -c 10) ))
