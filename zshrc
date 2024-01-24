@@ -72,5 +72,6 @@ if [ -e /opt/homebrew/bin/hx ] || [ -e /usr/bin/hx ]; then
 fi
 
 if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
-  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+    . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+    alias nix-shell="nix-shell --command 'zsh'"
 fi
