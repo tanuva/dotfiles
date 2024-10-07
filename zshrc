@@ -54,6 +54,7 @@ alias vscode="open -a /Applications/Visual\ Studio\ Code.app"
 
 # Put arm64 homebrew before x64 homebrew
 export PATH=/opt/homebrew/bin:$PATH
+export PATH=$PATH:~/bin
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 #export LESS="-N"
 #export SQUISH_USE_SWT=1
