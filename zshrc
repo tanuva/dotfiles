@@ -11,7 +11,6 @@ ZSH_THEME="tanuva"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gopath='export GOPATH=$GOPATH:`pwd`'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
