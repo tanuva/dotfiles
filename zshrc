@@ -55,6 +55,9 @@ alias vscode="open -a /Applications/Visual\ Studio\ Code.app"
 # Put arm64 homebrew before x64 homebrew
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=$PATH:~/bin
+# Created by `pipx` on 2024-02-09 12:48:52
+export PATH="$PATH:/Users/frosch/.local/bin"
+
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 #export LESS="-N"
 #export SQUISH_USE_SWT=1
@@ -75,3 +78,4 @@ if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
     . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
     alias nix-shell="nix-shell --command 'zsh'"
 fi
+
