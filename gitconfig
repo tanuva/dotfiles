@@ -1,0 +1,48 @@
+# This is Git's per-user configuration file.
+# Helpful: https://blog.gitbutler.com/how-git-core-devs-configure-git/
+[include]
+	path = ~/.gitidentity
+[branch]
+	sort = -committerdate
+[column]
+	ui = auto
+[core]
+	excludesFile = ~/.gitignore
+[commit]
+	gpgsign = false
+	verbose = true
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[help]
+	autocorrect = prompt
+[init]
+	defaultBranch = main
+[merge]
+	conflictstyle = diff3
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+	default = simple
+	followTags = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[tag]
+	sort = version:refname

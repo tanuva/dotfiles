@@ -62,6 +62,7 @@ export PATH="$PATH:/Users/frosch/.local/bin"
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 #export LESS="-N"
 #export SQUISH_USE_SWT=1
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # Signing with gpg fails with something about ioctls without this
 export GPG_TTY=$(tty)
