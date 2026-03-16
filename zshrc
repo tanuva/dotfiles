@@ -57,7 +57,7 @@ alias vscode="open -a /Applications/Visual\ Studio\ Code.app"
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=$PATH:~/bin
 # Created by `pipx` on 2024-02-09 12:48:52
-export PATH="$PATH:/Users/frosch/.local/bin"
+export PATH="$PATH:~/.local/bin"
 
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 #export LESS="-N"
