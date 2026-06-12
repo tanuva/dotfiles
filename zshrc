@@ -48,10 +48,23 @@ source $ZSH/oh-my-zsh.sh
 alias ll="ls -lh"
 # Fix colors in tig after ~/.terminfo for fixing tmux broke them
 alias tig="TERM=xterm-256color tig"
-alias gpdev="git push gerrit HEAD:refs/for/dev"
-alias gcp="git cherry-pick"
-alias gpforce="git push --force-with-lease --force-if-includes"
 alias vscode="open -a /Applications/Visual\ Studio\ Code.app"
+alias fdg="fd -g"
+
+alias gc="git commit"
+alias gcp="git cherry-pick"
+alias gf="git fetch"
+alias gl="git pull"
+alias gp="git push"
+alias gpdev="git push gerrit HEAD:refs/for/dev"
+alias gpforce="git push --force-with-lease --force-if-includes"
+alias grb="git rebase"
+alias grba="git rebase --abort"
+alias grbc="git rebase --continue"
+alias grbi="git rebase --interactive"
+alias gst="git status"
+alias gsta="git stash apply"
+alias gstp="git stash pop"
 
 # Put arm64 homebrew before x64 homebrew
 export PATH=/opt/homebrew/bin:$PATH
