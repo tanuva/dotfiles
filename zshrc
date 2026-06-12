@@ -1,6 +1,6 @@
 alias ll="ls -lh"
 # Fix colors in tig after ~/.terminfo for fixing tmux broke them
-alias tig="TERM=xterm-256color tig"
+#alias tig="TERM=xterm-256color tig"
 alias vscode="open -a /Applications/Visual\ Studio\ Code.app"
 alias fdg="fd -g"
 
