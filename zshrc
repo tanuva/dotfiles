@@ -1,50 +1,3 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
-ZSH_CUSTOM=$HOME/.dotfiles/zsh_custom
-
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="tanuva"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment to change how often before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want to disable command autocorrection
-# DISABLE_CORRECTION="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
-
-# Uncomment following line if you want to disable marking untracked files under
-# VCS as dirty. This makes repository status check for large repositories much,
-# much faster.
-DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git macos python rust)
-
-source $ZSH/oh-my-zsh.sh
-
 alias ll="ls -lh"
 # Fix colors in tig after ~/.terminfo for fixing tmux broke them
 alias tig="TERM=xterm-256color tig"
@@ -76,6 +29,8 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 #export LESS="-N"
 #export SQUISH_USE_SWT=1
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+eval $(oh-my-posh init zsh --config ~/.dotfiles/omp/feirge.omp.json)
 
 # Signing with gpg fails with something about ioctls without this
 export GPG_TTY=$(tty)
