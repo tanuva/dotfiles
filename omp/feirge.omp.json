@@ -61,7 +61,7 @@
           "template": " \ue20f ",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
-          "background": "p:dark_pink",
+          "background": "p:host_segment",
           "type": "status",
           "style": "powerline"
         }
