@@ -1,18 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-    "white": "#FFFFFF",
-    "tan": "#CC3802",
-    "teal": "#047E84",
-    "plum": "#9A348E",
-    "blush": "#DA627D",
-    "salmon": "#FCA17D",
-    "sky": "#86BBD8",
-    "teal_blue": "#33658A",
-    "pink": "#ff75a2",
-    "dark_pink": "#ee6d98",
-    "purple": "#be19d6",
-    "blue": "#333ebd"
+    "host_segment": "#6D0202",
+    "path_segment": "#F2780C",
+    "git_segment": "#F2A20C",
+    "prompt_indicator": "#F2780C"
   },
   "blocks": [
     {
@@ -21,7 +13,7 @@
       "segments": [
         {
           "foreground": "#fff",
-          "background": "p:dark_pink",
+          "background": "p:host_segment",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": "{{ .UserName }}@{{ .HostName }} ",
@@ -44,7 +36,7 @@
           "template": " {{ .Path }} ",
           "foreground": "#fff",
           "powerline_symbol": "\ue0b0",
-          "background": "p:purple",
+          "background": "p:path_segment",
           "type": "path",
           "style": "powerline"
         },
@@ -52,12 +44,10 @@
           "template": " {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }} {{ end }} ",
           "foreground": "#fff",
           "powerline_symbol": "\ue0b0",
-          "background": "p:blue",
+          "background": "p:git_segment",
           "type": "git",
           "style": "powerline",
-          "options": {
-
-          }
+          "options": {}
         },
         {
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
@@ -83,7 +73,7 @@
       "segments": [
         {
           "template": "❯ ",
-          "foreground": "p:pink",
+          "foreground": "p:prompt_indicator",
           "type": "text",
           "style": "plain"
         }
