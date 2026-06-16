@@ -18,7 +18,7 @@ alias grba="git rebase --abort"
 alias grbc="git rebase --continue"
 alias grbi="git rebase --interactive"
 alias gst="git status"
-alias gsta="git stash apply"
+alias gsta="git stash"
 alias gstp="git stash pop"
 
 # Put arm64 homebrew before x64 homebrew
