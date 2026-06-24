@@ -22,9 +22,9 @@ HOST_COLOUR_INDEX=$((HOST_COLOUR_INDEX+1)) # increase by one as zsh arrays start
 
 local HOST_FG=#fff
 local HOST_FG=${READABLE_COLOURS[$HOST_COLOUR_INDEX]}
-local HOST_BG=#5d4f70
-local PATH_BG=#c2acf2
-local GIT_BG=#5d4f70
+local HOST_BG=#303d07
+local PATH_BG=#f2A20c
+local GIT_BG=#303d07
 
 PROMPT="%{%B%F{$HOST_BG}%}"$'\ue0b6'"%{%K{$HOST_BG}%F{$HOST_FG}%}%n@%m %{%F{$HOST_BG}%K{$PATH_BG}%}"$'\ue0b0'" %{%F{#000}%}%~ %{%F{$PATH_BG}%K{$GIT_BG}%}"$'\ue0b0'
 PROMPT+='$(git_prompt_info)'
