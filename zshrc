@@ -1,6 +1,6 @@
 # oh-my-zsh setup
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="feirge"
+ZSH_THEME="frosch"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 ZSH_CUSTOM=$HOME/.dotfiles/zsh_custom
