@@ -1,0 +1,15 @@
+font-family = AdwaitaMono Nerd Font Mono
+
+cursor-style = block
+copy-on-select = clipboard
+
+#mouse-scroll-multiplier = 2
+
+#window-decoration = true
+window-colorspace = display-p3
+window-padding-balance = true
+window-save-state = always
+
+background-opacity = 0.6
+background-blur = macos-glass-regular
+#macos-titlebar-style = transparent
