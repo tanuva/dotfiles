@@ -1,0 +1,27 @@
+{
+	"always_show_minimap_viewport": true,
+	"color_scheme": "auto",
+	"caret_style": "phase",
+	"highlight_line": true,
+	"rulers": [80, 120],
+	"ignored_packages":
+	[
+		"Package Control",
+		"Vintage",
+	],
+
+	"tab_completion": false,
+	"auto_complete_include_snippets": false,
+
+	"ensure_newline_at_eof_on_save": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": "all",
+	"trim_only_modified_white_space": false,
+
+	"scroll_past_end": 0.5,
+	"index_files": false,
+	"theme": "auto",
+	"dark_color_scheme": "Monokai.sublime-color-scheme",
+	"light_color_scheme": "Breakers.sublime-color-scheme",
+	"font_size": 13,
+}
